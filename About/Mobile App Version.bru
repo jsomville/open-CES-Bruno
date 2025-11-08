@@ -1,0 +1,16 @@
+meta {
+  name: Mobile App Version
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{URL}}/api/about/mobileAppVersion
+  body: none
+  auth: inherit
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

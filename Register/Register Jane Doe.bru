@@ -1,0 +1,23 @@
+meta {
+  name: Register Jane Doe
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{URL}}/api/register
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "firstname" : "Jane",
+    "lastname" : "Doe",
+    "email" : "jane.doe@opences.com",
+    "region": "EU",
+    "phone": "+3267890766",
+    "password": "Test12345!",
+    "symbol" : "CES"
+  }
+}
